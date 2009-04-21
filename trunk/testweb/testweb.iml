@@ -10,7 +10,7 @@
           <root url="file://$MODULE_DIR$/src/main/resources/MODULE-INF" relative="/" />
         </webroots>
         <building>
-          <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/../out/exploded/testwebWeb" />
+          <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/../out/exploded/test" />
           <setting name="EXPLODED_ENABLED" value="true" />
           <setting name="JAR_URL" value="file://$MODULE_DIR$/../out/test.war" />
           <setting name="JAR_ENABLED" value="true" />
@@ -22,6 +22,18 @@
             <attribute name="URI" value="/WEB-INF/classes" />
           </containerElement>
           <containerElement type="library" name="spring" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib" />
+          </containerElement>
+          <containerElement type="library" name="antlr" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib" />
+          </containerElement>
+          <containerElement type="library" name="asm" level="project">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib" />
+          </containerElement>
+          <containerElement type="library" name="commons" level="project">
             <attribute name="method" value="1" />
             <attribute name="URI" value="/WEB-INF/lib" />
           </containerElement>
@@ -46,8 +58,10 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="antlr" level="project" />
+    <orderEntry type="library" name="asm" level="project" />
     <orderEntry type="library" name="spring" level="project" />
-    <orderEntry type="library" name="Clover IDEA Plugin" level="application" />
+    <orderEntry type="library" name="commons" level="project" />
   </component>
 </module>
 
